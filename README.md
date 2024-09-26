@@ -1,4 +1,4 @@
-# 👋 Welcome to My First Python Project: Rock, Paper, Scissors! 🎉
+#👋 Welcome to My First Python Project: Rock, Paper, Scissors! 🎉
 
 ## Project Overview
 
@@ -31,6 +31,24 @@ To run the **Rock, Paper, Scissors** game on your machine, follow these steps:
 - Make sure you have Python installed on your system.
   - [Download Python here](https://www.python.org/downloads/)
 
+### Installation
+
+1. **Clone the repository** to your local machine:
+    ```bash
+    git clone https://github.com/antonio-oliver/rock-paper-scissors.git
+    ```
+   
+2. **Navigate to the project directory**:
+    ```bash
+    cd rock-paper-scissors
+    ```
+
+3. **Run the game**:
+    ```bash
+    python main.py
+    ```
+
+---
 
 ## Game Features 🎯
 
@@ -61,6 +79,10 @@ Enter your choice: 1
 You chose: Rock
 The computer chose: Scissors
 You win!
+
+Do you want to play again?
+Enter your choice: yes/no
+
 
 ## Contributing 🤝
 

@@ -1,32 +1,31 @@
 import random
 
-def jugar():
-    opciones = ['piedra', 'papel', 'tijera']
+def play():
+    options = ["rock", "paper", "scissors"]
+    
+    while True:
+        player = input("Choose rock, paper, or scissors: ").lower()
+        if player not in options:
+            print("Invalid choice, please try again.")
+            continue
+        
+        computer = random.choice(options)
+        print(f"The computer chose: {computer}")
+        
+        if player == computer:
+            print("It's a tie!")
+        elif (player == "rock" and computer == "scissors") or \
+             (player == "scissors" and computer == "paper") or \
+             (player == "paper" and computer == "rock"):
+            print("You win!")
+        else:
+            print("You lose.")
+        
+        # Ask if they want to play again
+        play_again = input("Do you want to play again? (yes/no): ").lower()
+        if play_again != "yes":
+            print("Thanks for playing!")
+            break
 
-    # Preguntar al jugador por su elección
-    jugador = input("Elige piedra, papel o tijera: ")
-
-    # Validar la entrada
-    if jugador not in opciones:
-        print("Opción no válida, por favor elige de nuevo.")
-        return
-
-    # La computadora elige al azar
-    computadora = random.choice(opciones)
-
-    # Mostrar las elecciones
-    print(f"\nTú elegiste: {jugador}")
-    print(f"La computadora eligió: {computadora}\n")
-
-    # Determinar el ganador
-    if jugador == computadora:
-        print("¡Es un empate!")
-    elif (jugador == 'piedra' and computadora == 'tijera') or \
-         (jugador == 'papel' and computadora == 'piedra') or \
-         (jugador == 'tijera' and computadora == 'papel'):
-        print("¡Ganaste!")
-    else:
-        print("¡Perdiste!")
-
-# Ejecutar el juego
-jugar()
+# Call the function to start the game
+play()
