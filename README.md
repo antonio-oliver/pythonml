@@ -1,4 +1,4 @@
-#👋 Welcome to My First Python Project: Rock, Paper, Scissors! 🎉
+# 👋 Welcome to My First Python Project: Rock, Paper, Scissors! 🎉
 
 ## Project Overview
 
